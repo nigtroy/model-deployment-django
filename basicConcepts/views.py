@@ -8,5 +8,4 @@ def Welcome(request):
 
 def User(request):
     username = request.GET['username']
-    print(username)
-    return render(request, "user.html") 
+    return render(request, "user.html", {'name': username}) 
